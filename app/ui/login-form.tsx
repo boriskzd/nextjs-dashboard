@@ -11,6 +11,10 @@ import { Button } from './button';
 import { useFormState, useFormStatus } from 'react-dom';
 import { authenticate } from '@/app/lib/actions';
 
+// for login credentials look for:
+// app\lib\placeholder-data.js
+// users.email and users.password
+
 export default function LoginForm() {
   const [errorMessage, dispatch] = useFormState(authenticate, undefined);
 
